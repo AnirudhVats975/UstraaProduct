@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/UstraaProduct/static/css/main.32853eba.chunk.css",
-    "main.js": "/UstraaProduct/static/js/main.252c58bc.chunk.js",
-    "main.js.map": "/UstraaProduct/static/js/main.252c58bc.chunk.js.map",
+    "main.js": "/UstraaProduct/static/js/main.85473260.chunk.js",
+    "main.js.map": "/UstraaProduct/static/js/main.85473260.chunk.js.map",
     "runtime-main.js": "/UstraaProduct/static/js/runtime-main.f5bb9007.js",
     "runtime-main.js.map": "/UstraaProduct/static/js/runtime-main.f5bb9007.js.map",
     "static/js/2.715aa574.chunk.js": "/UstraaProduct/static/js/2.715aa574.chunk.js",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.f5bb9007.js",
     "static/js/2.715aa574.chunk.js",
     "static/css/main.32853eba.chunk.css",
-    "static/js/main.252c58bc.chunk.js"
+    "static/js/main.85473260.chunk.js"
   ]
 }
