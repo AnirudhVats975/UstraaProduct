@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* utility */
+
+.btnDefault{
+   padding: 8px 12px;
+   background: rgb(79, 207, 100);
+   font-size: 13px;
+   color: #fff;
+   font-weight: 400;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+   cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* productsCategories css  */
+.productsCategories .mainHeading{
+    font-size: 21px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    word-spacing: 1.3px;
+}
+.productsCategories ul {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+}
+.productsCategories ul li {
+    height: 70px;
+    min-width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: green;
+    margin-left: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.productsCategories ul li a{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.productsCategories ul li .commonstyle{
+    border: none;
+    outline: none;
+    color: #fff;
+   
 }
+
+.productsCategories ul li a.active {
+    background: transparent !important;
+    border: none;
+    outline: none;
+    
+}
+
+.productsCategories ul li a.active{
+    color: rgb(214, 211, 211) !important;
+} 
+
+
+.productsCategories ul li a:hover {
+    border: none;
+    outline: none;
+}
+
+
+
+
+.productsCategories ul li.sale {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/sale_main.jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.essentials {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/essentials_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.cologne {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/cologn_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.trimmer {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/trimmer_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.face_body {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/hair_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.beard {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/beard_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.hair {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/hair_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+
+.productsCategories ul li.skin {
+    background: linear-gradient(
+        rgba(35,43,56,0.7),
+        rgba(35,43,56,0.7)
+    ), url(./images/skin_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+}
+/* productCard css  */
+
+
+.productCard{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.productCard .productImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productCard .productInfo{
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.productCard .productInfo .productName p{
+    font-size: 14px;
+    color: #000;
+}
+
+.productCard .productInfo .productPrize{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+.productCard .productInfo .productPrize h3{
+  font-size: 22px;
+  color: black;
+}
+
+.productCard .productInfo .productPrize #discount{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.productCard .productsRating {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  
+}
+
+
+.productCard .productsRating span{
+    font-size: 14px;
+
+
+}
+
