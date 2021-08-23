@@ -20,7 +20,7 @@ const EssentialsCard = () => {
                                     <img src={productsImg} alt="img" className="img-fluid" />
                                 </div>
 
-                                <div className="col-8 productInfo">
+                                <div className="col-7 productInfo">
                                     <div className="productName">
                                         <p>{productName}</p>
                                     </div>
@@ -34,7 +34,7 @@ const EssentialsCard = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-1 productsRating">
+                                <div className="col-2 productsRating">
                                     <p>{productRating} <span><i className="fas fa-star"></i></span></p>
                                 </div>
                             </div>
